@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+
+    <!-- we are using this for font families  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=League+spartan:wght@100;200;300;400;600&display=swap"/>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="card">
+            <!-- Heading -->
+            <div>
+            <h1 id="heading_1"> PASSWORD GENRATOR </h1>
+            </div>
+            
+            
+
+            <!-- password genrator  -->
+            <div class="genrator">
+             
+                <input readonly placeholder=" password " id="password_show" >
+
+                <button class="btn_1" data-copy>
+                    <span data-copyMsg class="tooltip"> </span>
+                      <img src="copy.svg" width="23" height="23" >
+                    
+                </button>
+            
+           
+            </div>
+
+            <!-- next div -->
+            <div class="child_card">
+
+               
+                <div class="one">
+                   <!-- heading od subchild  -->
+                   <h3 id="heading_2">Password Lenght</h3>
+
+                   <h2 id="value">0</h2>
+                </div>
+
+                <!-- slider  -->
+                <div class="slider">
+                    <!-- jan bujkr data-lenghtslider custom attribute diya hai  -->
+                    <input type="range" min="1" max="20" value="50" class="slider_1" id="myslider" data-lenghtslider>
+
+                </div>
+
+                <!-- checkboxs and labels  -->
+                <div class="check">
+                    <label for="chck_1" class="checkboxes" id="one">
+                          <input type="checkbox" id="chck_1" >
+                          Include Upper Case Letters
+                    </label>
+                </div>
+
+                <div class="check">
+                    <label for="chck_2" class="checkboxes" id="two">
+                          <input type="checkbox" id="chck_2" >
+                          Include lower Case Letters
+                    </label>
+                </div>
+
+                <div class="check">
+                    <label for="chck_3" class="checkboxes" id="three">
+                          <input type="checkbox" id="chck_3" >
+                          Include int Case Letters
+                    </label>
+                </div>
+
+                <div class="check">
+                    <label for="chck_4" class="checkboxes" id="four">
+                          <input type="checkbox" id="chck_4" >
+                          Include symbol Case Letters
+                    </label>
+                </div>
+
+            
+                
+                <!-- last heading  -->
+                <div class="strenght_container ">
+                    <!-- strength  -->
+                   <h3 id="heading_3">Strength</h3>
+
+                    <!-- sign of strength  & create a custom indicator -->
+                   <div class="indicator" data-indicator ></div>
+
+                </div>
+
+                <!-- button -->
+                <button id="btn_2">
+                    <h3 id="heading_4">Genrated password</h3>
+                </button>
+
+
+
+              </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
